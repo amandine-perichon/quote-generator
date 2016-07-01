@@ -1,5 +1,10 @@
+/*
 * { border: solid red 1px; }
+*/
 
+body {
+  margin: 0;
+}
 
 #quote-generator > div {
   display: flex;
@@ -15,4 +20,10 @@
 
 .quote div {
   width: 80%;
+}
+
+.header {
+  background-image: url('designer.jpg');
+  background-color: #cccccc;
+  color: white;;
 }
