@@ -9,19 +9,13 @@
   height: 50vh;
 }
 
-.title {
-  font-size: 4rem;
-}
+.title { font-size: 4rem; }
 
-.quote div {
-  width: 80%;
-}
+.quote div { width: 80%; }
 
 .quote iframe {
   align-self: flex-end;
   margin-top: 1%;
 }
 
-.buttons {
-  margin-top: 1%;
-}
+.buttons { margin-top: 1%; }
