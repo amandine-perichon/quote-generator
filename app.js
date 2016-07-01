@@ -21,6 +21,10 @@ $(document).ready(function() {
       refresh()
    })
    $('.refresh').click(refresh)
+   $('.easter-egg').click(function () {
+      console.log("Easter Egg")
+      $('.signatures').css("background", "url('./style/phoenix.jpg') #ffffff no-repeat 50% 30%")
+   })
 })
 
 // Call to programming quote API
@@ -41,7 +45,8 @@ function programmingQuoteAPIcall () {
          error: function () {
             $('.quote div:first-child').html('Error! Error!')
             $('.quote div:nth-child(2)').html('')
-         }
+         },
+         cache: false
       })
    } else {
 // Call to programmer proverbs - returning a string
@@ -57,7 +62,8 @@ function programmingQuoteAPIcall () {
          error: function() {
             $('.quote div:first-child').html('Error! Error!')
             $('.quote div:nth-child(2)').html('')
-         }
+         },
+         cache: false
       })
    }
 }
@@ -72,13 +78,14 @@ function designQuoteAPIcall() {
       dataType: "json",
       success: function (data) {
          $('.quote div:first-child em').html('"' + data[0].content.replace(/<[\/]*p>/gi, '') + '"')
-         $('.quote div:nth-child(2) strong').text(data[0].title).html()
+         $('.quote div:nth-child(2) strong').html(data[0].title)
          $('.twitter-button').attr("src", "https://platform.twitter.com/widgets/tweet_button.html?text=" + encodeURI(data[0].content.replace(/<[\/]*p>/gi, '') + ' By ' + data[0].title))
       },
       error: function() {
          $('.quote div:first-child').html('Error! Error!')
          $('.quote div:nth-child(2)').html('')
-      }
+      },
+      cache: false
    })
 }
 
