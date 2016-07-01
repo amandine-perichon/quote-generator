@@ -16,9 +16,6 @@ body {
 
 .title { 
   font-size: 4rem;
-  color: black;;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke: 1px back;
 }
 
 .quote iframe {
@@ -32,9 +29,16 @@ body {
   width: 80%;
 }
 
-.header {
+.header.designer {
   background-image: url('designer.jpg');
-  background-color: #cccccc;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.header.programmer {
+  background-image: url('programmer.jpg');
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .buttons { 

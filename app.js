@@ -3,6 +3,7 @@ $(document).ready(function() {
    // Initialize web page
    programmingQuoteAPIcall()
    $('.quote-type').html("Design quote")
+   $('.header').attr('class', "header programmer")
 
    // Event handlers
    $('.quote-type').click(function () {
@@ -10,9 +11,12 @@ $(document).ready(function() {
       if (currentType === "programming") {
          $('#quote-generator').attr('class', "design")
          $('.quote-type').html("Programming quote")
+            $('.header').attr('class', "header designer")
       } else if (currentType === 'design') {
          $('#quote-generator').attr('class', "programming")
          $('.quote-type').html("Design quote")
+         $('.header').attr('class', "header programmer")
+
       }
       refresh()
    })
