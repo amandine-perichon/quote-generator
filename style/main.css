@@ -1,3 +1,4 @@
+
 /*
 * { border: solid red 1px; }
 */
@@ -11,7 +12,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 33.1vh;
 }
 
 .title {
@@ -43,6 +44,7 @@ body {
 
 .buttons {
   margin-top: 1%;
+}
 
 .header {
   border-bottom: 3px solid #c1bec5;
@@ -53,9 +55,8 @@ body {
 }
 
 .signatures {
-  background: url('https://pbs.twimg.com/media/B3LMznDIgAA7EsX.jpg') #ffffff no-repeat center;
+  background: url('phoenix.jpg') #ffffff no-repeat center;
   background-size: 80% 60%;
-  color: #ffffff;
 }
 
 .signatures > div {
