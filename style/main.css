@@ -16,3 +16,7 @@
 .quote div {
   width: 80%;
 }
+
+.quote iframe {
+  align-self: flex-end;
+}
