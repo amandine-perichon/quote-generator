@@ -41,6 +41,10 @@ body {
   color: #000000;
 }
 
+.header {
+  border-bottom: 3px solid #c1bec5;
+}
+
 .buttons { 
   margin-top: 1%; 
 }
