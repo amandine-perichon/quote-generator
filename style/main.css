@@ -14,7 +14,12 @@ body {
   height: 50vh;
 }
 
-.title { font-size: 4rem; }
+.title { 
+  font-size: 4rem;
+  color: black;;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px back;
+}
 
 .quote iframe {
   align-self: flex-end;
@@ -30,9 +35,7 @@ body {
 .header {
   background-image: url('designer.jpg');
   background-color: #cccccc;
-  color: white;;
 }
-
 
 .buttons { 
   margin-top: 1%; 

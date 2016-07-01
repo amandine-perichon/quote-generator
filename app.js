@@ -36,7 +36,7 @@ function programmingQuoteAPIcall () {
          },
          error: function () {
             $('.quote div:first-child').html('Error! Error!')
-            $('.quote div:nth-child(2)').html('!')
+            $('.quote div:nth-child(2)').html('')
          }
       })
    } else {
@@ -73,6 +73,7 @@ function designQuoteAPIcall() {
       },
       error: function() {
          $('.quote div:first-child').html('Error! Error!')
+         $('.quote div:nth-child(2)').html('')
       }
    })
 }
