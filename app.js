@@ -28,14 +28,15 @@ function programmingQuoteAPIcall () {
       $.ajax({
          type: 'GET',
          url: 'http://cors.io/?u=http://quotes.stormconsultancy.co.uk/random.json',
-         error: function () {
-            $('.quote div:first-child').html('Error! Error!')
-         },
          dataType: 'json',
          success: function (data) {
             $('.quote div:first-child').text(data.quote).html()
-            $('.quote div:last-child').text(data.author).html()
+            $('.quote div:nth-child(2)').text(data.author).html()
             $('.twitter-button').attr("src", "https://platform.twitter.com/widgets/tweet_button.html?text=" + encodeURI(data.quote + " By " + data.author))
+         },
+         error: function () {
+            $('.quote div:first-child').html('Error! Error!')
+            $('.quote div:nth-child(2)').html('!')
          }
       })
    } else {
@@ -46,11 +47,12 @@ function programmingQuoteAPIcall () {
          dataType: "json",
          success: function (data) {
             $('.quote div:first-child').text(data).html()
-            $('.quote div:last-child').text('').html()
+            $('.quote div:nth-child(2)').text('').html()
             $('.twitter-button').attr("src", "https://platform.twitter.com/widgets/tweet_button.html?text=" + encodeURI(data))
          },
          error: function() {
             $('.quote div:first-child').html('Error! Error!')
+            $('.quote div:nth-child(2)').html('')
          }
       })
    }
@@ -66,7 +68,7 @@ function designQuoteAPIcall() {
       dataType: "json",
       success: function (data) {
          $('.quote div:first-child').html(data[0].content.replace(/<[\/]*p>/gi, ''))
-         $('.quote div:last-child').text(data[0].title).html()
+         $('.quote div:nth-child(2)').text(data[0].title).html()
          $('.twitter-button').attr("src", "https://platform.twitter.com/widgets/tweet_button.html?text=" + encodeURI(data[0].content.replace(/<[\/]*p>/gi, '') + ' By ' + data[0].title))
       },
       error: function() {
