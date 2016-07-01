@@ -19,4 +19,9 @@
 
 .quote iframe {
   align-self: flex-end;
+  margin-top: 1%;
+}
+
+.buttons {
+  margin-top: 1%;
 }
