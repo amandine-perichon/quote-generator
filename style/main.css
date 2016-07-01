@@ -1,0 +1,19 @@
+* { border: solid red 1px; }
+
+#quote-generator {
+  height: 100vh;
+  box-sizing: border-box;
+}
+#quote-generator > div {
+  height: 50vh;
+  text-align: center;
+}
+
+.title {
+  font-size: 4rem;
+  display: inline-block;
+}
+
+.buttons {
+  display: inline-block;
+}
