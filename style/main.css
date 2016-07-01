@@ -26,7 +26,7 @@ body {
 }
 
 .quote div {
-  width: 80%;
+  max-width: 60%;
 }
 
 .header.designer {
