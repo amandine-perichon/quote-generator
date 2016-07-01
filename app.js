@@ -51,7 +51,7 @@ function programmingQuoteAPIcall () {
          dataType: "json",
          success: function (data) {
             $('.quote div:first-child em').text('"' + data + '"').html()
-            $('.quote div:nth-child(2) strong').text('').html()
+            $('.quote div:nth-child(2) strong').text('Unknown (?)').html()
             $('.twitter-button').attr("src", "https://platform.twitter.com/widgets/tweet_button.html?text=" + encodeURI(data))
          },
          error: function() {
