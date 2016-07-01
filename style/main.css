@@ -14,14 +14,14 @@ body {
   height: 50vh;
 }
 
-.title { 
+.title {
   font-size: 4rem;
 }
 
 .quote iframe {
   align-self: flex-end;
   margin-top: 1%;
-  border: 0; 
+  border: 0;
   overflow: hidden;
 }
 
@@ -41,6 +41,16 @@ body {
   color: #000000;
 }
 
-.buttons { 
-  margin-top: 1%; 
+.buttons {
+  margin-top: 1%;
+}
+
+.signatures {
+  background: url('https://pbs.twimg.com/media/B3LMznDIgAA7EsX.jpg') #ffffff no-repeat center;
+  background-size: 80% 60%;
+  color: #ffffff;
+}
+
+.signatures > div {
+  color: #B54141;
 }
