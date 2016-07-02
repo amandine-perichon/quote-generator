@@ -52,7 +52,7 @@ function programmingQuoteAPIcall () {
 // Call to programmer proverbs - returning a string
       $.ajax({
          type: "GET",
-         url: "https://proverbs-app.antjan.us/random",
+         url: "https://crossorigin.me/http://proverbs-app.antjan.us/random",
          dataType: "json",
          success: function (data) {
             $('.quote div:first-child em').text('"' + data + '"').html()
@@ -74,7 +74,7 @@ function designQuoteAPIcall() {
    $('.title').html("Design Quote")
    $.ajax({
       type: "GET",
-      url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
+      url: "https://crossorigin.me/http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
       dataType: "json",
       success: function (data) {
          $('.quote div:first-child em').html('"' + data[0].content.replace(/<[\/]*p>/gi, '') + '"')
