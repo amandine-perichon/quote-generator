@@ -48,6 +48,13 @@ body {
   margin-top: 1%;
 }
 
+button {
+  color: white;
+  background-color: #1b95e0;
+  border-color: white;
+  border-radius: 15%;
+}
+
 .header {
   border-bottom: 3px solid #c1bec5;
 }
