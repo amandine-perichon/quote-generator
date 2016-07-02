@@ -35,7 +35,7 @@ function programmingQuoteAPIcall () {
    if (random) {
       $.ajax({
          type: 'GET',
-         url: 'http://cors.io/?u=http://quotes.stormconsultancy.co.uk/random.json',
+         url: 'http://cors.io/?u=https://quotes.stormconsultancy.co.uk/random.json',
          dataType: 'json',
          success: function (data) {
             $('.quote div:first-child em').text('"' + data.quote + '"').html()
@@ -52,7 +52,7 @@ function programmingQuoteAPIcall () {
 // Call to programmer proverbs - returning a string
       $.ajax({
          type: "GET",
-         url: "http://proverbs-app.antjan.us/random",
+         url: "https://proverbs-app.antjan.us/random",
          dataType: "json",
          success: function (data) {
             $('.quote div:first-child em').text('"' + data + '"').html()
@@ -74,7 +74,7 @@ function designQuoteAPIcall() {
    $('.title').html("Design Quote")
    $.ajax({
       type: "GET",
-      url: "http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
+      url: "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1",
       dataType: "json",
       success: function (data) {
          $('.quote div:first-child em').html('"' + data[0].content.replace(/<[\/]*p>/gi, '') + '"')
