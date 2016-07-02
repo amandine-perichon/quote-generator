@@ -35,7 +35,7 @@ function programmingQuoteAPIcall () {
    if (random) {
       $.ajax({
          type: 'GET',
-         url: 'http://cors.io/?u=https://quotes.stormconsultancy.co.uk/random.json',
+         url: 'https://crossorigin.me/http://quotes.stormconsultancy.co.uk/random.json',
          dataType: 'json',
          success: function (data) {
             $('.quote div:first-child em').text('"' + data.quote + '"').html()
